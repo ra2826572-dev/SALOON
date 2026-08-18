@@ -5,6 +5,8 @@ import exteriorImg from '../assets/images/delaqua_exterior_1787049303808.jpg';
 import bridalImg from '../assets/images/delaqua_bridal_1787049320042.jpg';
 import hydraFacialImg from '../assets/images/delaqua_hydra_facial_1787049339284.jpg';
 import hairStylingImg from '../assets/images/delaqua_hair_styling_1787049358586.jpg';
+import whiteningFacialImg from '../assets/images/whitening_facial_spa_1787050279284.jpg';
+import goldFacialImg from '../assets/images/gold_facial_treatment_1787050297182.jpg';
 
 export const SALON_INFO = {
   name: 'DELAQUA Beauty Salon',
@@ -117,7 +119,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Included in Rs. 3,000 Deal',
     duration: '60 mins',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1512290900672-1f41b2504b2b?auto=format&fit=crop&w=800&q=80',
+    image: whiteningFacialImg,
     details: ['Whitening polisher', 'Double whitening cleanse', 'Head & shoulder massage', 'Mineral glow mask']
   },
   {
@@ -128,7 +130,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Rs. 5,000 Package',
     duration: '75 mins',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+    image: goldFacialImg,
     details: ['24K Gold Polisher', 'Gold Scrub & Tone', '24K Face Serum', '14K Eye Facial & Shine Mask', 'Diamond Glow Mani/Pedi']
   },
   {
@@ -478,7 +480,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-8',
     title: '24K Gold Facial Therapy',
     category: 'skin',
-    imageUrl: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',
+    imageUrl: goldFacialImg,
     caption: 'Pure gold leaves, whitening polisher and antioxidant face serum.'
   },
   {
