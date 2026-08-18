@@ -1,0 +1,6 @@
+{
+  "name": "DELAQUA Beauty Salon Faisalabad",
+  "description": "Premium luxury women's beauty salon and spa in Faisalabad offering signature hair, skin, bridal makeup, nail, facial and spa packages by Asma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
