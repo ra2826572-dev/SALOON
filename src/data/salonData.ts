@@ -1,22 +1,5 @@
 import { ServiceItem, DealItem, HairDealMatrix, GalleryItem, ReviewItem } from '../types';
 
-import heroSalonImg from '../assets/images/delaqua_hero_salon_1787049286222.jpg';
-import exteriorImg from '../assets/images/delaqua_exterior_1787049303808.jpg';
-import bridalImg from '../assets/images/delaqua_bridal_1787049320042.jpg';
-import hydraFacialImg from '../assets/images/delaqua_hydra_facial_1787049339284.jpg';
-import hairStylingImg from '../assets/images/delaqua_hair_styling_1787049358586.jpg';
-import whiteningFacialImg from '../assets/images/whitening_facial_spa_1787050279284.jpg';
-import goldFacialImg from '../assets/images/gold_facial_treatment_1787050297182.jpg';
-import blowDryImg from '../assets/images/blow_dry_styling_1787147131115.jpg';
-import hairColorImg from '../assets/images/hair_color_balayage_1787147120963.jpg';
-import keratinImg from '../assets/images/keratin_smooth_hair_1787147105514.jpg';
-import fruitFacialImg from '../assets/images/fruit_facial_glow_1787147144804.jpg';
-import thalgoFacialImg from '../assets/images/thalgo_marine_spa_1787147159087.jpg';
-import nailPedicureImg from '../assets/images/luxury_nail_pedicure_1787147172878.jpg';
-import frenchManiImg from '../assets/images/french_manicure_hands_1787147198654.jpg';
-import partyMakeupImg from '../assets/images/party_glam_makeup_1787147185177.jpg';
-import waxingSpaImg from '../assets/images/spa_waxing_wellness_1787147209958.jpg';
-
 export const SALON_INFO = {
   name: 'DELAQUA Beauty Salon',
   brand: 'Delaqua by Asma',
@@ -35,11 +18,11 @@ export const SALON_INFO = {
   totalReviews: 133,
   googleMapsUrl: "https://maps.google.com/?q=Delaqua+Beauty+Salon+50-A+Nizami+Street+People's+Colony+1+Faisalabad",
   images: {
-    hero: heroSalonImg,
-    exterior: exteriorImg,
-    bridal: bridalImg,
-    hydraFacial: hydraFacialImg,
-    hairStyling: hairStylingImg,
+    hero: '/assets/images/hero.jpg',
+    exterior: '/assets/images/exterior.jpg',
+    bridal: '/assets/images/bridal.jpg',
+    hydraFacial: '/assets/images/hydra-facial.jpg',
+    hairStyling: '/assets/images/hair-styling.jpg',
   }
 };
 
@@ -53,7 +36,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Starting from Rs. 1,500',
     duration: '45 mins',
     popular: true,
-    image: hairStylingImg,
+    image: '/assets/images/hair-styling.jpg',
     details: ['Personalized consultation', 'Shampoo & conditioner wash', 'Precision scissor & razor styling', 'Signature blow dry finish']
   },
   {
@@ -63,7 +46,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'High-volume blowout, Hollywood waves, sleek straight, or beachy texture with heat protectant gloss.',
     price: 'Starting from Rs. 1,200',
     duration: '30-45 mins',
-    image: blowDryImg,
+    image: '/assets/images/blow-dry.jpg',
     details: ['Deep wash', 'Thermal nourishment', 'Bouncy volume blast', 'Long-lasting shine spray']
   },
   {
@@ -74,7 +57,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Starting from Rs. 5,500',
     duration: '2 - 3 hours',
     popular: true,
-    image: hairColorImg,
+    image: '/assets/images/hair-color.jpg',
     details: ['Color matching consultation', 'Premium European toners', 'Bond protector infusion', 'Gloss shine locking treatment']
   },
   {
@@ -84,7 +67,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'All-over seamless color transformation with root-to-tip uniform coverage and lustrous mirror finish.',
     price: 'From Rs. 6,500 (See Deals)',
     duration: '90 mins',
-    image: hairStylingImg,
+    image: '/assets/images/hair-styling.jpg',
     details: ['Custom color formulation', 'Grey coverage 100%', 'Hydrating wash', 'Gloss blowout']
   },
   {
@@ -95,7 +78,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'From Rs. 10,000 (See Deals)',
     duration: '2.5 - 3.5 hours',
     popular: true,
-    image: keratinImg,
+    image: '/assets/images/keratin.jpg',
     details: ['Deep clarifying detox', 'Nanokeratin infusion', 'Thermal sealed alignment', 'Up to 5 months longevity']
   },
   {
@@ -105,7 +88,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Intense scalp detox, hair Botox, Olaplex bond repair, and deep moisture spa therapies.',
     price: 'Starting from Rs. 2,800',
     duration: '60 mins',
-    image: blowDryImg,
+    image: '/assets/images/blow-dry.jpg',
     details: ['Micro-mist steam infusion', 'Aromatherapy scalp massage', 'Follicle strengthening serum']
   },
 
@@ -117,7 +100,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Enriched with botanical fruit enzymes, antioxidants and natural vitamins for a soft, radiant natural glow.',
     price: 'Included in Rs. 2,500 Deal',
     duration: '50 mins',
-    image: fruitFacialImg,
+    image: '/assets/images/fruit-facial.jpg',
     details: ['Fruit cleanser', 'Exfoliating fruit scrub', 'Cooling fruit gel', 'Nourishing botanical mask']
   },
   {
@@ -128,7 +111,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Included in Rs. 3,000 Deal',
     duration: '60 mins',
     popular: true,
-    image: whiteningFacialImg,
+    image: '/assets/images/whitening.jpg',
     details: ['Whitening polisher', 'Double whitening cleanse', 'Head & shoulder massage', 'Mineral glow mask']
   },
   {
@@ -139,7 +122,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Rs. 5,000 Package',
     duration: '75 mins',
     popular: true,
-    image: goldFacialImg,
+    image: '/assets/images/gold-facial.jpg',
     details: ['24K Gold Polisher', 'Gold Scrub & Tone', '24K Face Serum', '14K Eye Facial & Shine Mask', 'Diamond Glow Mani/Pedi']
   },
   {
@@ -150,7 +133,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Rs. 8,000 Package',
     duration: '90 mins',
     popular: true,
-    image: hydraFacialImg,
+    image: '/assets/images/hydra-facial.jpg',
     details: ['Vortex extraction & tool', 'LED light therapy', 'Galvanic & hydration serums', 'Whitening Mani & Pedi']
   },
   {
@@ -160,7 +143,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'World-renowned French marine algae formulation delivering deep cellular renewal and youth restoration.',
     price: 'Rs. 12,000 Package',
     duration: '90 mins',
-    image: thalgoFacialImg,
+    image: '/assets/images/thalgo.jpg',
     details: ['Face polisher & double scrub', 'Scrapper tool extraction', 'Thalgo marine mask', 'Diamond Glow Mani/Pedi', 'Head & shoulder massage']
   },
   {
@@ -170,7 +153,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Instant pick-me-up session for pore refinement, dead skin removal, and radiant velvet touch.',
     price: 'Starting from Rs. 1,800',
     duration: '40 mins',
-    image: whiteningFacialImg,
+    image: '/assets/images/whitening.jpg',
     details: ['Deep steam cleansing', 'Fine-grit micro-polisher', 'Acupressure face & neck massage']
   },
 
@@ -182,7 +165,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Relaxing herbal soak, gentle cuticle care, scrub exfoliation, soothing hand/foot massage, and classic polish.',
     price: 'Starting from Rs. 1,800',
     duration: '60 mins',
-    image: nailPedicureImg,
+    image: '/assets/images/pedicure.jpg',
     details: ['Warm rosewater soak', 'Dead skin filing & scrub', 'Cuticle trimming & shaping', 'Relaxing pressure point massage']
   },
   {
@@ -193,7 +176,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Starting from Rs. 2,800',
     duration: '75 mins',
     popular: true,
-    image: nailPedicureImg,
+    image: '/assets/images/pedicure.jpg',
     details: ['Diamond peel polish', 'Collagen hand/foot mask', 'Deep heat therapy wrap', 'Gel or French finish']
   },
   {
@@ -203,7 +186,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Chic Parisian white tips, custom trendy nail art, chrome powders, or long-lasting gel extensions.',
     price: 'Starting from Rs. 1,500',
     duration: '50 mins',
-    image: frenchManiImg,
+    image: '/assets/images/french-mani.jpg',
     details: ['Nail reinforcement', 'Precision French line drafting', 'UV gel coat seal']
   },
 
@@ -215,7 +198,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Smooth and painless hair removal with skin-nourishing soothing aftercare lotion.',
     price: 'Rs. 1,400',
     duration: '35 mins',
-    image: waxingSpaImg,
+    image: '/assets/images/waxing.jpg',
     details: ['Skin prep & antiseptic sanitization', 'Gentle hot/strip wax formula', 'Cooling aloe vera soothing gel']
   },
   {
@@ -225,7 +208,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Hygienic and gentle hair removal for sensitive areas with calming post-wax hydration.',
     price: 'Rs. 1,800',
     duration: '30 mins',
-    image: waxingSpaImg,
+    image: '/assets/images/waxing.jpg',
     details: ['Sensitive skin formula', 'Minimal redness technique', 'Post-wax soothing mist']
   },
   {
@@ -236,7 +219,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Rs. 2,500',
     duration: '60 mins',
     popular: true,
-    image: waxingSpaImg,
+    image: '/assets/images/waxing.jpg',
     details: ['Full arms + underarms', 'Full legs waxing', 'Deep calming body oil massage']
   },
 
@@ -249,7 +232,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Custom Bridal Packages',
     duration: '3 - 4 hours',
     popular: true,
-    image: bridalImg,
+    image: '/assets/images/bridal.jpg',
     details: ['HD Airbrush or Studio Foundation', '3D Mink Lashes & Eye Styling', 'Dupatta setting & jewelry styling', 'Hydra glow prep & fixing mist']
   },
   {
@@ -260,7 +243,7 @@ export const SERVICES: ServiceItem[] = [
     price: 'Starting from Rs. 6,000',
     duration: '90 mins',
     popular: true,
-    image: partyMakeupImg,
+    image: '/assets/images/party-makeup.jpg',
     details: ['Skin prep & color correction', 'Eye makeup with premium lashes', 'Contour, blush & highlighter', 'Hairstyling included']
   },
   {
@@ -270,7 +253,7 @@ export const SERVICES: ServiceItem[] = [
     description: 'Studio-camera ready makeup with camera-optimized matte and velvet finishes.',
     price: 'Starting from Rs. 8,000',
     duration: '2 hours',
-    image: partyMakeupImg,
+    image: '/assets/images/party-makeup.jpg',
     details: ['HD camera resistant foundation', 'Custom hair updos', 'Touch-up kit provided']
   }
 ];
@@ -440,84 +423,84 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-1',
     title: 'Luxury Salon Interior',
     category: 'interior',
-    imageUrl: heroSalonImg,
+    imageUrl: '/assets/images/hero.jpg',
     caption: 'Chic modern interior with LED illuminated styling stations and black marble finishes.'
   },
   {
     id: 'gal-2',
     title: 'DELAQUA Salon Exterior',
     category: 'interior',
-    imageUrl: exteriorImg,
+    imageUrl: '/assets/images/exterior.jpg',
     caption: "Upscale storefront at 50-A Nizami Street, People's Colony No. 1, Faisalabad."
   },
   {
     id: 'gal-3',
     title: 'Signature Bridal Makeover',
     category: 'makeup',
-    imageUrl: bridalImg,
+    imageUrl: '/assets/images/bridal.jpg',
     caption: 'Exquisite bridal look by Asma with flawless HD skin, glam eye styling, and traditional jewelry.'
   },
   {
     id: 'gal-4',
     title: 'Hydra Facial & Clinical Aesthetic Care',
     category: 'skin',
-    imageUrl: hydraFacialImg,
+    imageUrl: '/assets/images/hydra-facial.jpg',
     caption: 'Advanced Hydra Facial treatment with serum vortex infusion and LED light therapy.'
   },
   {
     id: 'gal-5',
     title: 'Precision Hair Dye & Blow Dry',
     category: 'hair',
-    imageUrl: hairStylingImg,
+    imageUrl: '/assets/images/hair-styling.jpg',
     caption: 'Single process hair dye, glossy toner and signature blowout volume.'
   },
   {
     id: 'gal-6',
     title: 'Diamond Glow Nail Bar & Pedicure',
     category: 'nails',
-    imageUrl: nailPedicureImg,
+    imageUrl: '/assets/images/pedicure.jpg',
     caption: 'Ultra-luxurious pedicure lounge with massage chairs and pampering foot soaks.'
   },
   {
     id: 'gal-7',
     title: 'Keratin Smoothing & Silk Shine',
     category: 'hair',
-    imageUrl: keratinImg,
+    imageUrl: '/assets/images/keratin.jpg',
     caption: 'Glass-hair finish with Brazilian protein smoothing treatment.'
   },
   {
     id: 'gal-8',
     title: '24K Gold Facial Therapy',
     category: 'skin',
-    imageUrl: goldFacialImg,
+    imageUrl: '/assets/images/gold-facial.jpg',
     caption: 'Pure gold leaves, whitening polisher and antioxidant face serum.'
   },
   {
     id: 'gal-9',
     title: 'Glam Party Makeup & Lashes',
     category: 'makeup',
-    imageUrl: partyMakeupImg,
+    imageUrl: '/assets/images/party-makeup.jpg',
     caption: 'Smokey party glam with 3D lashes and sculptured contouring.'
   },
   {
     id: 'gal-10',
     title: 'Balayage & Hair Highlights Artistry',
     category: 'hair',
-    imageUrl: hairColorImg,
+    imageUrl: '/assets/images/hair-color.jpg',
     caption: 'Sun-kissed multidimensional balayage highlights with luminous shine finish.'
   },
   {
     id: 'gal-11',
     title: 'French Manicure & Nail Styling',
     category: 'nails',
-    imageUrl: frenchManiImg,
+    imageUrl: '/assets/images/french-mani.jpg',
     caption: 'Precision French tips with delicate rose gold embellishments.'
   },
   {
     id: 'gal-12',
     title: 'French Marine Spa Therapy',
     category: 'skin',
-    imageUrl: thalgoFacialImg,
+    imageUrl: '/assets/images/thalgo.jpg',
     caption: 'Cellular rejuvenating Thalgo marine algae facial in a tranquil suite.'
   }
 ];
